@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../globalstyle.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div>
+      <div><top-navbar /></div>
+    </div>
+    <div class="pagewrapper">
+      <div>
+        <nav-sidebar
+          items='[{ "name": "내 개발에 대하여", "anchor": "about" }, {"name": "만들어온것들", "anchor": "projects"}, {"name": "할 수 있는 것들", "anchor": "whatcanido"}]'
+        />
+      </div>
+      <div class="article">
+        <h1 id="about">내 개발에 대하여</h1>
+        <div class="horizontal">
+          <text-card
+            >언제나 머릿속엔 번뜩이는 아이디어들이 가득합니다. 프로토타이핑으로
+            빠르게 생각을 검증하고, 검증된 기획들을 체계적이게
+            만들어냅니다.</text-card
+          >
+          <text-card
+            >"코딩"만을 개발이라고 생각하지 않습니다. 그저 어떤것을 더 낫게
+            만들어 나가는, 모든 행위가 개발이라고 생각합니다.</text-card
+          >
+        </div>
+        <img src="/assets/image/process.svg" class="process_image" />
+        <h2>만들어온것들</h2>
+        <div>
+          <interactive-projects selected />
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import NavBar from "/components/navbar/index.js";
+      import Sidebar from "/components/sidebar/index.js";
+      import TextCard from "/components/textcard/index.js";
+      import Projects from "/components/projects/index.js";
+      customElements.define("top-navbar", NavBar);
+      customElements.define("nav-sidebar", Sidebar);
+      customElements.define("text-card", TextCard);
+      customElements.define("interactive-projects", Projects);
+    </script>
+  </body>
+</html>
