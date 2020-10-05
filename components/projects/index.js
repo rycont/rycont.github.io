@@ -126,7 +126,7 @@ class Projects extends LitElement {
     },
     {
       name: "베네판다",
-      tags: ["RN", "GCP", "도커", "TS"],
+      tags: ["RN", "GCP", "도커", "TS", "노드"],
       descript: "베네듀 안드로이드 클라이언트 (비공식)",
       image: "/assets/image/benepanda.svg",
       link: "https://github.com/DIMI19WP/benepanda",
@@ -177,6 +177,13 @@ class Projects extends LitElement {
       image: "/assets/image/bingshin.png",
       descript: "구글 => 빙 리디렉션 익스텐션",
       link: "https://github.com/rycont/Gnex",
+    },
+    {
+      name: "지스트 와카타임 업데이터",
+      tags: ["디노", "TS"],
+      image: "/assets/image/wakatime.png",
+      descript: "구글 => 빙 리디렉션 익스텐션",
+      link: "https://github.com/rycont/gist-wakatime-display",
     },
   ];
   static get properties() {
