@@ -36,3 +36,7 @@
 .historic_line img:not([data-nocut]) {
   border-radius: 27px;
 }
+.profile_wrapper themed-link {
+  margin: 24px 0px 0px 0px;
+  /* display: inline-block; */
+}
