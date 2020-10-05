@@ -108,9 +108,11 @@ class Projects extends LitElement {
       }
       .wrapper.selected > a > div {
         opacity: 0.1;
+        transform: scale(0.9);
       }
       a > div.card_wrapper.selected {
         opacity: 1;
+        transform: scale(1);
       }
     `;
   }
