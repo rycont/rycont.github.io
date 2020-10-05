@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RyCont</title>
+  <link rel="stylesheet" href="./globalstyle.css" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div>
+    <top-navbar />
+  </div>
+
+  <div class="profile_wrapper">
+    <img class="main_logo" src="https://rycont.imfast.io/logo%20making/full%20logo%20big%20text.png" />
+    <h1>박정한(2004)</h1>
+    <p class="account_name">활동명 : RyCont(라이컨트)</p>
+    <div class="historic_wrapper">
+      <p class="historic_line">
+        <img src="/assets/image/dimigo.png" />
+        한국디지털미디어고등학교 웹프로그래밍과
+      </p>
+      <p class="historic_line">
+        <img src="/assets/image/inu.png" />
+        아이디어 실험동아리 "이누"
+      </p>
+      <p class="historic_line">
+        <img src="/assets/image/dimigoin.svg" data-nocut />
+        교내 인트라넷 "디미고인" 개발팀
+      </p>
+      <p class="historic_line">
+        <img src="/assets/image/implude.png" data-nocut />
+        안드로이드 개발 / 창업동아리 "임플루드"(#IMPLUDE)
+      </p>
+    </div>
+    <themed-link />
+  </div>
+  <script type="module">
+    import NavBar from "./components/navbar/index.js";
+    import Link from "./components/link/index.js"
+    customElements.define("top-navbar", NavBar);
+    customElements.define("themed-link", Link);
+  </script>
+</body>
+
+</html>

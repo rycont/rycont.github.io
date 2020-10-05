@@ -1,0 +1,38 @@
+.profile_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  font-family: NanumSquare;
+}
+.profile_wrapper h1 {
+  font-weight: 800 !important;
+  margin: 24px 0px 0px 0px;
+  font-size: 42px;
+}
+.profile_wrapper p.account_name {
+  margin: 24px 0px 0px 0px;
+  font-size: 27px;
+}
+.main_logo {
+  width: 144px;
+  border-radius: 72px;
+}
+.historic_wrapper {
+  margin-top: 12px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.historic_line {
+  font-size: 27px;
+  margin: 12px 0px 0px 0px;
+}
+.historic_line img {
+  width: 27px;
+  vertical-align: middle;
+}
+.historic_line img:not([data-nocut]) {
+  border-radius: 27px;
+}
