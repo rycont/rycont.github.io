@@ -22,6 +22,7 @@
 
 body {
   margin: 0px;
+  padding: 0px 72px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
