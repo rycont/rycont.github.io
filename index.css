@@ -40,3 +40,19 @@
   margin: 24px 0px 0px 0px;
   /* display: inline-block; */
 }
+.profile_wrapper .links {
+  display: flex;
+  margin-top: 24px;
+}
+.profile_wrapper .links > * {
+  flex: 1;
+}
+.profile_wrapper .coming_soon {
+  border: 1px solid #dbdbdb;
+  background-color: #efefef;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  color: #838383;
+  margin-left: 12px;
+}
