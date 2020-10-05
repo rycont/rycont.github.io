@@ -39,12 +39,19 @@
         </p>
       </div>
       <themed-link to="/">내 활동 보러 가기</themed-link>
+      <card-link
+        title="내 개발에 대하여"
+        text="내가 개발하는 이유와 방법에 대해 말해줄게요"
+        iconSrc="/assets/icon/arrow-top-right.svg"
+      />
     </div>
     <script type="module">
       import NavBar from "./components/navbar/index.js";
       import Link from "./components/link/index.js";
+      import CardLink from "./components/cardlink/index.js";
       customElements.define("top-navbar", NavBar);
       customElements.define("themed-link", Link);
+      customElements.define("card-link", CardLink);
     </script>
   </body>
 </html>
