@@ -160,7 +160,11 @@ class SkillGraph extends LitElement {
               </div>
             </div>
             ${skill.subSkills &&
-            html` <p class="subskills">└ ${skill.subSkills?.join(", ")}</p> `}
+            html`
+              <p class="subskills">
+                └ ${skill.subSkills && skill.subSkills.join(", ")}
+              </p>
+            `}
           `
         )}
       </div>
