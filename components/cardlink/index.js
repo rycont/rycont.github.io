@@ -12,6 +12,9 @@ class CardLink extends LitElement {
       iconSrc: {
         type: String,
       },
+      to: {
+        type: String,
+      },
     };
   }
   static get styles() {
@@ -36,18 +39,24 @@ class CardLink extends LitElement {
         margin: 12px 0px 0px 0px;
         font-size: 18px;
       }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     `;
   }
   render() {
     console.log(this, this.text);
     return html`
-      <div class="wrapper">
-        <div class="header">
-          <h1>${this.title}</h1>
-          <img src="${this.iconSrc}" />
+      <a href="${this.to}">
+        <div class="wrapper">
+          <div class="header">
+            <h1>${this.title}</h1>
+            <img src="${this.iconSrc}" />
+          </div>
+          <p>${this.text}</p>
         </div>
-        <p>${this.text}</p>
-      </div>
+      </a>
     `;
   }
 }
