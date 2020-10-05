@@ -4,7 +4,7 @@ class NavBar extends LitElement {
   static get styles() {
     return css`
       nav {
-        padding: 80px 0px 0px;
+        padding: 60px 0px 0px;
         display: flex;
         align-items: center;
       }
