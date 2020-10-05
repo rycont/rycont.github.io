@@ -136,7 +136,7 @@ class Projects extends LitElement {
       tags: ["리액트", "TS"],
       descript: "디미고 교내 인트라넷 프론트엔드 개발",
       image: "/assets/image/dimigoin.svg",
-      link: "https://github.com/dimigoin/dimigoin-front-v3/",
+      link: "https://github.com/dimigoin/dimigoin-front-v2/",
     },
     {
       name: "조사컴플릿",
