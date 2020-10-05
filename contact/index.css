@@ -1,0 +1,15 @@
+.contacts {
+  flex-wrap: wrap;
+  margin: 14px -6px 0px;
+}
+
+.contacts > div {
+  width: 240px;
+  margin: 6px;
+}
+
+@media screen and (max-width: 610px) {
+  .contacts > div {
+    width: unset;
+  }
+}

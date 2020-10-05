@@ -28,6 +28,8 @@
 .historic_line {
   font-size: 27px;
   margin: 12px 0px 0px 0px;
+  text-align: center;
+  word-break: keep-all;
 }
 .historic_line img {
   width: 27px;
@@ -40,19 +42,32 @@
   margin: 24px 0px 0px 0px;
   /* display: inline-block; */
 }
+@media screen and (max-width: 840px) {
+  .profile_wrapper h1 {
+    font-size: 36px;
+  }
+  .profile_wrapper p.account_name {
+    font-size: 24px;
+  }
+  .historic_line {
+    font-size: 24px;
+  }
+}
 .profile_wrapper .links {
-  display: flex;
   margin-top: 24px;
 }
-.profile_wrapper .links > * {
+.profile_wrapper .links card-link {
   flex: 1;
 }
-.profile_wrapper .coming_soon {
-  border: 1px solid #dbdbdb;
-  background-color: #efefef;
-  display: grid;
-  place-items: center;
-  font-size: 15px;
-  color: #838383;
-  margin-left: 12px;
+
+@media screen and (max-width: 610px) {
+  .profile_wrapper h1 {
+    font-size: 24px;
+  }
+  .profile_wrapper p.account_name {
+    font-size: 20px;
+  }
+  .historic_line {
+    font-size: 20px;
+  }
 }

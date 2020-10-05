@@ -15,6 +15,12 @@ class CardLink extends LitElement {
       to: {
         type: String,
       },
+      linkIcon: {
+        type: String,
+      },
+      "no-round": {
+        type: Boolean,
+      },
     };
   }
   static get styles() {
@@ -22,18 +28,21 @@ class CardLink extends LitElement {
       div.wrapper {
         border: 2px solid #dbdbdb;
         padding: 20px 24px;
+        font-family: NanumSquare;
       }
       div.header {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      img {
+      div.header > img {
         fill: "818181";
       }
       h1 {
         font-size: 18px;
         margin: 0px;
+        flex-basis: 1;
+        flex-shrink: 0;
       }
       p {
         margin: 12px 0px 0px 0px;
@@ -43,6 +52,16 @@ class CardLink extends LitElement {
         text-decoration: none;
         color: inherit;
       }
+      .smallicon {
+        height: 20px;
+        margin-right: 8px;
+      }
+      .smallicon.round {
+        border-radius: 20px;
+      }
+      .iconandtitle {
+        display: flex;
+      }
     `;
   }
   render() {
@@ -51,7 +70,14 @@ class CardLink extends LitElement {
       <a href="${this.to}">
         <div class="wrapper">
           <div class="header">
-            <h1>${this.title}</h1>
+            <div class="iconandtitle">
+              ${this.linkIcon &&
+              html`<img
+                class="smallicon ${this["no-round"] ? "noround" : "round"}"
+                src="${this.linkIcon}"
+              />`}
+              <h1>${this.title}</h1>
+            </div>
             <img src="${this.iconSrc}" />
           </div>
           <p>${this.text}</p>

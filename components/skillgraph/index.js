@@ -12,7 +12,6 @@ class SkillGraph extends LitElement {
         align-items: center;
       }
       .skill .line {
-        /* height: 10px; */
         border-radius: 64px;
         background-color: #3b5961;
       }
@@ -50,6 +49,17 @@ class SkillGraph extends LitElement {
       .legend p {
         margin: 0px;
       }
+      @media screen and (max-width: 650px) {
+        img {
+          display: none;
+        }
+        .name p {
+          padding: 8px 16px;
+        }
+        .legend {
+          font-size: calc(2vw + 7px);
+        }
+      }
     `;
   }
   skills = [
@@ -79,7 +89,7 @@ class SkillGraph extends LitElement {
     {
       name: "리액트 네이티브",
       icon: "/assets/image/react.svg",
-      level: 53,
+      level: 60,
       color: "#bf5e73",
     },
     {
@@ -117,13 +127,13 @@ class SkillGraph extends LitElement {
     {
       name: "스벨트",
       icon: "/assets/image/svelte.svg",
-      level: 25,
+      level: 33,
       color: "#FF8158",
     },
     {
       name: "Docker",
       icon: "/assets/image/docker.svg",
-      level: 23,
+      level: 28,
       color: "#5f99e6",
     },
   ];

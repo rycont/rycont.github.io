@@ -20,10 +20,10 @@ class Projects extends LitElement {
         font-family: "Noto Sans KR", sans-serif;
         font-weight: 900;
         font-size: 21px;
-        padding: 10px;
+        padding: 5px 10px;
         color: white;
         margin: 0px !important;
-        height: 51px;
+        height: 41px;
         box-sizing: border-box;
       }
       .tags {
@@ -31,7 +31,7 @@ class Projects extends LitElement {
         flex-wrap: wrap;
         position: relative;
         height: 0px;
-        top: -51px;
+        top: -41px;
       }
       .TS {
         background-color: #579db4;
@@ -59,15 +59,15 @@ class Projects extends LitElement {
       }
       h1 {
         font-weight: 900;
-        font-size: 28px;
+        font-size: 22px;
         font-family: NanumSquare;
         margin: 12px 0px 0px;
       }
       p {
         margin: 8px 0px 0px;
         font-family: NanumBarunGothic;
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 22px;
+        line-height: 28px;
       }
       a {
         text-decoration: none;
@@ -75,21 +75,20 @@ class Projects extends LitElement {
       }
       .tags_wrapper {
         display: flex;
-        margin: 24px 0px;
+        margin: 27px -6px 21px;
+        flex-wrap: wrap;
       }
       .tag_selector {
         font-family: "Noto Sans KR", sans-serif;
         font-weight: 900;
         font-size: 21px;
-        padding: 10px;
+        padding: 6px 12px;
         color: white;
         border-radius: 6px;
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.18);
         opacity: 0.3;
         transition: 1s var(--fast-animate);
-      }
-      .tag_selector + .tag_selector {
-        margin-left: 6px;
+        margin: 6px;
       }
       .tags_wrapper:not(.selected) .tag_selector,
       .tag_selector.selected {

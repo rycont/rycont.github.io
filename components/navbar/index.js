@@ -27,6 +27,33 @@ class NavBar extends LitElement {
         text-decoration: none;
         color: inherit;
       }
+      @media screen and (max-width: 840px) {
+        nav {
+          padding: 20px 0px 0px;
+        }
+      }
+      @media screen and (max-width: 610px) {
+        nav {
+          flex-direction: column;
+        }
+        ul {
+          margin: 20px 0px 0px;
+        }
+        li:first-child {
+          margin: 0px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        ul {
+          flex-direction: column;
+        }
+        li {
+          margin: 6px 0px 0px;
+        }
+        nav {
+          align-items: flex-start;
+        }
+      }
     `;
   }
   render() {

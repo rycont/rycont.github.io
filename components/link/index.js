@@ -21,6 +21,16 @@ class MyElement extends LitElement {
         vertical-align: middle;
         width: 32px;
       }
+      @media screen and (max-width: 840px) {
+        a {
+          font-size: 24px;
+        }
+      }
+      @media screen and (max-width: 610px) {
+        a {
+          font-size: 20px;
+        }
+      }
     `;
   }
   render() {

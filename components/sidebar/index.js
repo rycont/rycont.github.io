@@ -14,6 +14,10 @@ class Sidebar extends LitElement {
         font-family: "IBMPlexSansKR-Bold";
         color: #b3b3b3;
         font-size: 24px;
+        margin: 0px;
+      }
+      div + div {
+        margin-top: 36px;
       }
       a {
         text-decoration: none;
@@ -21,19 +25,30 @@ class Sidebar extends LitElement {
       div {
         width: 240px;
       }
+      .wrapper {
+        position: sticky;
+        top: 50px;
+      }
+      @media screen and (max-width: 1100px) {
+        .wrapper {
+          display: none;
+        }
+      }
     `;
   }
   render() {
     const items = JSON.parse(this.items);
     if (items)
-      return html`${items.map(
-        (e) =>
-          html`
-            <div>
-              <a href="#${e.anchor}"><h2>${e.name}</h2></a>
-            </div>
-          `
-      )}`;
+      return html` <div class="wrapper">
+        ${items.map(
+          (e) =>
+            html`
+              <div>
+                <a href="#${e.anchor}"><h2>${e.name}</h2></a>
+              </div>
+            `
+        )}
+      </div>`;
   }
 }
 

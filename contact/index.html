@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RyCont | 연락처</title>
+    <link rel="stylesheet" href="../globalstyle.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div>
+      <div><top-navbar /></div>
+    </div>
+    <div class="pagewrapper">
+      <div>
+        <nav-sidebar
+          items='[{"name": "알아가기", "anchor": "links"}, {"name": "연락하기", "anchor": "contacts"}]'
+        />
+      </div>
+      <div class="article">
+        <h1 id="links">알아가기</h1>
+        <div class="links horizontal">
+          <div>
+            <card-link
+              title="깃허브"
+              linkIcon="/assets/image/github.svg"
+              text="제가 개발하거나 참여한 프로젝트를 공개해요"
+              iconSrc="/assets/icon/outlink.svg"
+              to="/developing"
+            />
+          </div>
+          <div class="coming_soon">더 많은 활동을 기대해주세요!</div>
+        </div>
+        <h1 id="contacts">연락하기</h1>
+        <div><text-card>업무연락, 친목연락 모두 환영입니다!</text-card></div>
+
+        <div class="links horizontal contacts">
+          <div>
+            <card-link
+              title="텔레그램"
+              linkIcon="/assets/image/telegram.svg"
+              no-round
+              text="가장 자주 사용하는 메신저입니다."
+              iconSrc="/assets/icon/outlink.svg"
+              to="/developing"
+            />
+          </div>
+          <div>
+            <card-link
+              title="카카오톡 오픈채팅"
+              no-round
+              text="자주 확인하는 메신저입니다."
+              iconSrc="/assets/icon/outlink.svg"
+              to="open.kakao.com/me/rycont"
+            />
+          </div>
+          <div>
+            <card-link
+              title="디스코드"
+              linkIcon="/assets/image/discord.svg"
+              no-round
+              text="종종 사용하는 메신저입니다"
+              iconSrc="/assets/icon/outlink.svg"
+              to="open.kakao.com/me/rycont"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import NavBar from "/components/navbar/index.js";
+      import Sidebar from "/components/sidebar/index.js";
+      import TextCard from "/components/textcard/index.js";
+      import CardLink from "/components/cardlink/index.js";
+      customElements.define("top-navbar", NavBar);
+      customElements.define("nav-sidebar", Sidebar);
+      customElements.define("text-card", TextCard);
+      customElements.define("card-link", CardLink);
+    </script>
+  </body>
+</html>
